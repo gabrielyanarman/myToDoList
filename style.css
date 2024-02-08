@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.container {
+    position: relative;
+    min-width: 750px;
+    min-height: 700px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: #1F2833;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 100px;
+    margin: 0px auto;
+    border-bottom: 1px solid #45A29E;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 20px;
+    font-family: cursive;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    color: #66FCF1;
+}
+
+.add {
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    border: 2px solid #45A29E;;
+    border-radius: 7px;
+    cursor: pointer;
+    background: transparent;
+    color: #C5C6C7;
+    transition: all .4s ease;
+}
+
+.add:hover {
+    background-color: #45A29E;
+    color: white;
+    font-size: 33px;
+    transform: scale(115%);
+}
+
+.main {
+    padding-top: 30px;
+    position: relative;
+    width: 90%;
+    margin: 0px auto 0px auto;
+}
+
+/* Main with 0 tasks */
+
+.message {
+    width: 100%;
+    padding: 0px 0px 0px 30px;
+}
+
+.message p {
+    font-family:monospace;
+    font-size: 18px;
+    color: #C5C6C7;
+    word-spacing: 7px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Main with tasks */
+
+table.for-task {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #45A29E;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: all .5s ease;
+    box-sizing: border-box;
+}
+
+/* Tasks */
+
+td.task {
+    width: 80%;
+    border-right: 1px solid #45A29E;
+    box-sizing: border-box;
+    transition: border .5s ease;
+}
+
+table:hover td.task {
+    border-right: 1px solid #C5C6C7;
+}
+
+table:hover {
+    border: 1px solid #C5C6C7;
+    border-radius: 10px;
+}
+
+td.task div {
+    position: relative;
+    margin: auto;
+    width: 95%;
+    color: #45A29E;
+    font-family: cursive;
+    font-size: 16px;
+    transition: color .5s ease;
+}
+
+td.task div p {
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+table:hover td.task div {
+    color: #C5C6C7;
+}
+
+textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    resize: none;
+    caret-color: #C5C6C7;
+    color: #C5C6C7;
+    font-family: cursive;
+    font-size: 16px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* task options */
+
+td.option {
+    width: 20%;
+}
+
+td.option div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+td.option div span {
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform .4s ease ;
+}
+
+td.option div span:hover {
+    transform: scale(125%);
+}
+
+/* CSS for done tasks list */
+
+table.for-task.done {
+    border: 1px solid #5b7065;
+}
+
+.container.done {
+    background-color: #304040;
+    
+}
+
+.head.done {
+    border-bottom: 1px solid #5b7065;
+}
+
+.logo.done {
+    color: #ffffff;
+}
+
+.message.done p {
+    color: #c9d1c8;
+}
+
+td.task.done {
+    border-right: 1px solid #5b7065;
+}
+
+table:hover td.task.done {
+    border-right: 1px solid #C5C6C7;
+}
+
+table.for-task.done:hover {
+    border: 1px solid #C5C6C7;
+}  
+
+td.task div {
+    color: #c9d1c8;
+}
